@@ -11,7 +11,7 @@ $(window).scroll(function() {
 
 $(function () {
     var location = window.location.href;
-    var cur_url = '../DLproduct/' + location.split('/').pop();
+    var cur_url = '../dlsite/' + location.split('/').pop();
 
     $('.navigation_links').each(function () {
         var link = $(this).find('a').attr('href');
