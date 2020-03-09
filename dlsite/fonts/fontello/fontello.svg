@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="mail" unicode="&#xe800;" d="M105 845h1152q43 0 74-31t31-74v-785q0-44-31-75t-74-30h-1152q-43 0-74 30t-31 75v785q0 43 31 74t74 31z m69-157l507-423 507 423h-1014z m-17-681h1048v558l-494-412h-61l-493 412v-558z" horiz-adv-x="1360" />
+
+<glyph glyph-name="phone" unicode="&#xe801;" d="M0 615q0 50 28 76l138 138q45 37 77-13l113-211q18-39-14-71l-51-52q-5-6-5-14 25-98 132-195l31-30t36-34 34-26 41-25 40-14q20-6 27 2l61 60q39 30 72 12l203-121q22-14 25-37t-13-39l-141-139q-27-27-74-27-140 4-318 121-258 185-375 406-72 151-67 233z" horiz-adv-x="988" />
+
+<glyph glyph-name="instagram" unicode="&#xf16d;" d="M571 350q0 59-41 101t-101 42-101-42-42-101 42-101 101-42 101 42 41 101z m77 0q0-91-64-156t-155-64-156 64-64 156 64 156 156 64 155-64 64-156z m61 229q0-21-15-36t-37-15-36 15-15 36 15 36 36 15 37-15 15-36z m-280 123q-4 0-43 0t-59 0-54-2-57-5-40-11q-28-11-49-32t-33-49q-6-16-10-40t-6-58-1-53 0-59 0-43 0-43 0-59 1-53 6-58 10-40q12-28 33-49t49-32q16-6 40-11t57-5 54-2 59 0 43 0 42 0 59 0 54 2 58 5 39 11q28 11 50 32t32 49q6 16 10 40t6 58 1 53 0 59 0 43 0 43 0 59-1 53-6 58-10 40q-11 28-32 49t-50 32q-16 6-39 11t-58 5-54 2-59 0-42 0z m428-352q0-128-3-177-5-116-69-180t-179-69q-50-3-177-3t-177 3q-116 6-180 69t-69 180q-3 49-3 177t3 177q5 116 69 180t180 69q49 3 177 3t177-3q116-6 179-69t69-180q3-49 3-177z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="facebook-official" unicode="&#xf230;" d="M810 779q19 0 33-14t14-34v-762q0-20-14-34t-33-14h-218v333h111l16 129h-127v83q0 31 13 46t51 16l68 1v115q-35 5-100 5-75 0-121-44t-45-127v-95h-112v-129h112v-333h-411q-19 0-33 14t-14 34v762q0 20 14 34t33 14h763z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>
