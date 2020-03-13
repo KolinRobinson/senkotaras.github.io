@@ -15,7 +15,7 @@ $(function(){
             if(this.className == 'header-btn'){
                 menuNav.removeClass("menu-active");
                 $("body").removeClass("fixed");
-                $("header").addClass("myIndex");
+                $("header").removeClass("myIndex");
             } else {
                 menuNav.addClass("menu-active");
                 $("body").addClass("fixed");
