@@ -152,6 +152,8 @@ ul
         padding: 30px 62px
         background-color: rgba(255, 255, 255, .1)
         transition: all .3s ease-in-out
+        @media screen and ( max-width: 426px )
+            padding: 30px 50px
         &:hover
             background-color: #770302
             transition: all .3s ease-in-out
@@ -347,8 +349,10 @@ ul
         padding: 30px 62px
         background-color: rgba(255, 255, 255, .1)
         transition: all .3s ease-in-out
+        @media screen and ( max-width: 426px )
+            padding: 30px 50px
         &:hover
-            background-color: #770302
+            background-color: #000
             transition: all .3s ease-in-out
 .footer-info
     display: flex
@@ -362,3 +366,10 @@ ul
             border-right: 1px solid #000
         a
             cursor: pointer
+            transition: all .3s ease-in-out
+            &:hover
+                color: #000
+                transition: all .3s ease-in-out
+        @media screen and ( max-width: 330px )
+            &:not(:last-child)
+                border-right: none

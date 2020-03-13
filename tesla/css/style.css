@@ -239,6 +239,12 @@ ul {
   transition: all .3s ease-in-out;
 }
 
+@media screen and (max-width: 426px) {
+  .header-content .header-content__btn {
+    padding: 30px 50px;
+  }
+}
+
 .header-content .header-content__btn:hover {
   background-color: #770302;
   -webkit-transition: all .3s ease-in-out;
@@ -564,8 +570,14 @@ ul {
   transition: all .3s ease-in-out;
 }
 
+@media screen and (max-width: 426px) {
+  .footer-btn .button {
+    padding: 30px 50px;
+  }
+}
+
 .footer-btn .button:hover {
-  background-color: #770302;
+  background-color: #000;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -595,5 +607,19 @@ ul {
 
 .footer-info li a {
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.footer-info li a:hover {
+  color: #000;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 330px) {
+  .footer-info li:not(:last-child) {
+    border-right: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
