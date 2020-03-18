@@ -96,6 +96,16 @@ body {
   overflow: hidden;
 }
 
+.animation-block{
+  left: 0 !important; 
+  opacity: 1 !important;
+  transition: all 1s;
+}
+
+section{
+  position: relative;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -496,6 +506,12 @@ ul {
   transition: all .3s ease-in-out;
 }
 
+#about{
+  left: -100%;
+  opacity: 0;
+  transition: all 1s;
+}
+
 .about-wrapper h2 {
   margin-bottom: 2rem;
 }
@@ -508,6 +524,7 @@ ul {
 .skills {
   background: #FFFAF2;
   padding-bottom: 4rem;
+  overflow: hidden;
 }
 
 .skills .skills-wrapper {
@@ -542,6 +559,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: all 1s;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 450px;
           flex: 0 1 450px;
@@ -556,6 +577,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: 100%;
+  opacity: 0;
+  transition: all 1s;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 450px;
           flex: 1 1 450px;
@@ -618,6 +643,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
+  margin-bottom: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -639,6 +665,13 @@ ul {
   text-align: right;
   background: #c66c49;
   height: 100%;
+}
+
+.slider{
+  position: relative;
+  left: -120%;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .slider-item {
@@ -754,7 +787,7 @@ ul {
   width: 30px;
   height: 30px;
   display: inline-block;
-  background-image: url(../images/arrow.png);
+  background: url(http://senya.pp.ua/wp-content/themes/senya/public/img/arrow.png);
   z-index: 5;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -801,9 +834,14 @@ ul {
 .blog {
   background: #FFFAF2;
   padding: 4rem 0 3rem;
+  overflow: hidden;
 }
 
 .blog-wrapper {
+  position: relative;
+  left: 120%;
+  opacity: 0;
+  transition: all 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -846,8 +884,8 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 280px;
-          flex: 1 1 280px;
+      -ms-flex: 0 1 280px;
+          flex: 0 1 280px;
   margin: 5px;
   border: 1px solid rgba(112, 55, 32, 0.4);
   overflow: hidden;
@@ -856,6 +894,14 @@ ul {
 
 .blog-wrapper .blog-wrapper__items .blog-item img {
   width: 100%;
+}
+
+.blog-wrapper .blog-wrapper__items .blog-item a {
+  color: rgba(112, 55, 32, 0.6);
+}
+
+.blog-wrapper .blog-wrapper__items .blog-item a:hover {
+  color: rgba(112, 55, 32, 1);
 }
 
 .blog-wrapper .blog-wrapper__items .blog-item h3, .blog-wrapper .blog-wrapper__items .blog-item p {
@@ -894,6 +940,7 @@ ul {
 .contact {
   padding-top: 4rem;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .contact-wrapper {
@@ -933,6 +980,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+  left: 200%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -966,6 +1017,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+  left: -100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 300px;
           flex: 1 1 300px;
