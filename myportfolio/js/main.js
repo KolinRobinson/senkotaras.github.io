@@ -42,18 +42,136 @@ $(function(){
                 menuBtn.addClass('burger');
             });
 
-        $(window).scroll(function() {
-            var height = $(window).scrollTop();
-            if(height > 560){
-            $('header').addClass('header-active__show');
-            $('#logo').addClass('logo-show');
-            $('.arrow-home').addClass('arrow-home_active');
-            } else{
-            $('header').removeClass('header-active__show');
-            $('#logo').removeClass('logo-show');
-            $('.arrow-home').removeClass('arrow-home_active');
+            $(window).scroll(function() {
+                var height = $(window).scrollTop();
+                if(height > 560){
+                $('header').addClass('header-active__show');
+                $('#logo').addClass('logo-show');
+                $('.arrow-home').addClass('arrow-home_active');
+                } else{
+                $('header').removeClass('header-active__show');
+                $('#logo').removeClass('logo-show');
+                $('.arrow-home').removeClass('arrow-home_active');
+                }
+            });
+            
+            var bodyWidth = $('body').width();
+            if (bodyWidth < 800) {
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 400){
+                        $('.about').addClass('animation-block')
+                    } else {
+                        $('.about').removeClass('animation-block')
+                    }
+                    
+                });
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 1050){
+                        $('.skills-wrapper__content--img').addClass('animation-block')
+                        $('.skills-wrapper__content--info').addClass('animation-block')
+                    } else {
+                        $('.skills-wrapper__content--img').removeClass('animation-block')
+                        $('.skills-wrapper__content--info').removeClass('animation-block')
+                    }
+                    
+                });
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 1800){
+                        $('.slider').addClass('animation-block')
+                    } else {
+                        $('.slider').removeClass('animation-block')
+                    }
+                    
+                });
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 2500){
+                        $('.blog-wrapper').addClass('animation-block')
+                    } else {
+                        $('.blog-wrapper').removeClass('animation-block')
+                    }
+                    
+                });
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 3200){
+                        $('.contact-wrapper__info--map').addClass('animation-block')
+                        $('.contact-wrapper__info--links').addClass('animation-block')
+                    } else {
+                        $('.contact-wrapper__info--links').removeClass('animation-block')
+                        $('.contact-wrapper__info--map').removeClass('animation-block')
+                    }
+                    
+                });
+            } else {
+        
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 300){
+                        $('.about').addClass('animation-block')
+                    } else {
+                        $('.about').removeClass('animation-block')
+                    }
+                    
+                });
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 900){
+                        $('.skills-wrapper__content--img').addClass('animation-block')
+                        $('.skills-wrapper__content--info').addClass('animation-block')
+                    } else {
+                        $('.skills-wrapper__content--img').removeClass('animation-block')
+                        $('.skills-wrapper__content--info').removeClass('animation-block')
+                    }
+                    
+                });
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 1600){
+                        $('.slider').addClass('animation-block')
+                    } else {
+                        $('.slider').removeClass('animation-block')
+                    }
+                    
+                });
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 2250){
+                        $('.blog-wrapper').addClass('animation-block')
+                    } else {
+                        $('.blog-wrapper').removeClass('animation-block')
+                    }
+                    
+                });
+        
+                $(window).scroll(function(){
+                    var height = $(window).scrollTop();
+                    if(height > 2900){
+                        $('.contact-wrapper__info--map').addClass('animation-block')
+                        $('.contact-wrapper__info--links').addClass('animation-block')
+                    } else {
+                        $('.contact-wrapper__info--links').removeClass('animation-block')
+                        $('.contact-wrapper__info--map').removeClass('animation-block')
+                    }
+                    
+                });
             }
-        });
+        
+            
+        
+
+
+
 
         var $page = $('html, body');
         $('a[href*="#"]').click(function() {
@@ -85,5 +203,7 @@ $(function(){
                     .end().filter("[href='#"+id+"']").parent().addClass("menu__active");
             } 
         });
+
+       
 
 });
