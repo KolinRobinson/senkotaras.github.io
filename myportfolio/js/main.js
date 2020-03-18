@@ -1,4 +1,16 @@
-var lastId,
+
+$(function(){
+    $('.slider').slick({
+        arrows: true,
+        dots: false,
+        fade: true,
+        autoplay: 2500,
+        appendArrows: $('.slider'),
+        prevArrow: `<span class="slick-prev"></span>`,
+        nextArrow: `<span class="slick-next"></span>`
+    });
+    
+    var lastId,
     menuHeader = $('header'),
     mainMenu = $('.header-wrapper__nav'),
     menuItems = mainMenu.find("a"),
@@ -8,16 +20,6 @@ var lastId,
         }),
     topMenuHeight = menuHeader.outerHeight()+15;
 
-$(function(){
-    $('.slider').slick({
-        arrows: true,
-        dots: false,
-        fade: true,
-        autoplay: 3000,
-        appendArrows: $('.slider'),
-        prevArrow: `<span class="slick-prev"></span>`,
-        nextArrow: `<span class="slick-next"></span>`
-    });
 
     var menuBtn = $('#burger');
     menuBtn.click(
